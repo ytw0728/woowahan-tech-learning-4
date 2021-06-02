@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "root",
+			"path": ".",
+		},
+		{
+			"name": "fe",
+			"path": "./fe"
+		},
+		{
+			"name": "be",
+			"path": "./be"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/node_modules/**": true
+		}
+	}
+}

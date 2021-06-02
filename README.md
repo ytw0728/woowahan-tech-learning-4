@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+# 우아한 테크러닝, 노션 만들기
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 구성
 
-## Available Scripts
+- yarn workspace + mono repo
+- frontend: create-react-app + typescript
+- backend: nestjs + typescript
 
-In the project directory, you can run:
+## 목표
 
-### `yarn start`
+1. 데스크탑 기준의 노션같은 서비스
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. 실시간 수정 지원
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. 리치 마크다운 지원
 
-### `yarn test`
+4. 출판 알림 혹은 rss 피드 지원
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 도구
 
-### `yarn build`
+### 마크다운
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 통합 에디터 형태
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. [rich-markdown-editor](https://github.com/outline/rich-markdown-editor)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - star 2K
+    - React and Prosemirror, styled-components 기반
+    - [Outline](https://www.getoutline.com/) 프로젝트 지원용으로 제작됨.
 
-### `yarn eject`
+2. [canner-slate-editor](https://github.com/Canner/canner-slate-editor)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    - star 1.1K
+    - [Slate framework](https://docs.slatejs.org/) 기반임.
+    - 범용
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### 커스텀 에디터 형태
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. [ProseMirror](https://github.com/prosemirror)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    - [문서](https://prosemirror.net/)가 투박해보임
+    - repo가 조각조각
 
-## Learn More
+2. [Slate framework](https://github.com/ianstormtaylor/slate) *유력*
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+    - *star 20.8K*
+    - [문서](https://docs.slatejs.org/)가 이뻐보임
